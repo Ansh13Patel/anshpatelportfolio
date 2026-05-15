@@ -112,7 +112,7 @@ const translations = {
         "experience.job2.bullet2": "Design einer reaktionsschnellen, plattformübergreifenden Benutzeroberfläche für Mobilgeräte und PC, um konsistente Leistung und Benutzerfreundlichkeit zu gewährleisten.",
         "experience.job2.bullet3": "Erstellung von 20+ spielbaren Anzeigen mit einer Three.js-basierten Engine (unter 5 MB), wodurch die CTR um 85-120 % gesteigert wurde.",
 
-        "experience.job3.title": "Praktikant als Game Programmer",
+        "experience.job3.title": "Game Programmer Praktikant",
         "experience.job3.company": "Xansr Technologies, Hyderabad, Indien",
         "experience.job3.date": "Feb 2024 - Jul 2024",
         "experience.job3.bullet1": "Entwicklung wiederverwendbarer Systeme einschließlich Asset Pipeline und FTUE, was die Entwicklungseffizienz verbesserte.",
@@ -155,7 +155,7 @@ const translations = {
         "languages.english": "Englisch (B2)",
         "languages.german": "Deutsch (A2)",
         "languages.hindi": "Hindi (C1)",
-        "languages.gujarati": "Gujarati (Native)",
+        "languages.gujarati": "Gujarati (Muttersprache)",
 
         "skills.title": "Technische Fähigkeiten",
         "skills.engines": "Game-Engines & Werkzeuge",
