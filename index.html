@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansh Patel | Game Programmer</title>
+    <meta name="description"
+        content="Portfolio of Ansh Patel, Game Programmer specializing in Unity and Unreal Engine.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="dark-theme">
+    <div id="noise-overlay"></div>
+    <div id="cursor-glow"></div>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">AP.</a>
+            <ul class="nav-links">
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+                <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+            <div class="lang-switch">
+                <button id="lang-en" class="active">EN</button>
+                <button id="lang-de">DE</button>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h2 class="greeting" data-i18n="hero.greeting">Hello, I am</h2>
+                <h1 class="name">Ansh Patel</h1>
+                <h3 class="title glitch" data-text="Game Programmer" data-i18n="hero.title">Game Programmer</h3>
+                <p class="summary" data-i18n="hero.summary">Passionate Game Programmer with professional experience in
+                    playable ads and live operations on titles like Temple Run. Currently focusing on personal projects
+                    in Unreal Engine and C++, and set to begin a Master's in Game Technologies in Germany in September
+                    2026. Dedicated to crafting highly engaging gameplay and optimizing performance.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary" data-i18n="hero.viewWork">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary" data-i18n="hero.contactMe">Contact Me</a>
+                    <a href="cv_en.pdf" target="_blank" class="btn btn-secondary cv-link" id="cv-link" data-i18n="hero.cv">CV</a>
+                </div>
+            </div>
+            <div class="hero-graphics">
+                <div class="cube-container">
+                    <div class="cube">
+                        <div class="face front"></div>
+                        <div class="face back"></div>
+                        <div class="face right"></div>
+                        <div class="face left"></div>
+                        <div class="face top"></div>
+                        <div class="face bottom"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <h2 class="section-title" data-i18n="experience.title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 data-i18n="experience.job1.title">Game Programmer</h3>
+                                <h4 data-i18n="experience.job1.company">Xansr Technologies, Hyderabad, India</h4>
+                            </div>
+                            <span class="timeline-date" data-i18n="experience.job1.date">Aug 2025 - Present</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li data-i18n="experience.job1.bullet1">Implemented playable characters and live event
+                                systems in Temple Run Plus, improving engagement and retention.</li>
+                            <li data-i18n="experience.job1.bullet2">Worked on Temple Run 1 & 2 live configurations and
+                                resolved bugs related to gameplay and configuration systems.</li>
+                            <li data-i18n="experience.job1.bullet3">Migrated S3 caching to CloudFront, reducing AWS S3
+                                costs by 50%.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 data-i18n="experience.job2.title">Game Programmer</h3>
+                                <h4 data-i18n="experience.job2.company">Funcell Games, Ahmedabad, India</h4>
+                            </div>
+                            <span class="timeline-date" data-i18n="experience.job2.date">Aug 2024 - Aug 2025</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li data-i18n="experience.job2.bullet1">Developed a multiplayer metaverse experience using
+                                Photon, enabling real-time player interaction.</li>
+                            <li data-i18n="experience.job2.bullet2">Designed responsive cross-platform UI for mobile and
+                                PC, ensuring consistent performance and usability.</li>
+                            <li data-i18n="experience.job2.bullet3">Built 20+ playable ads using a Three.js-based engine
+                                (under 5MB), achieving 85–120% CTR uplift.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 data-i18n="experience.job3.title">Game Programmer Intern</h3>
+                                <h4 data-i18n="experience.job3.company">Xansr Technologies, Hyderabad, India</h4>
+                            </div>
+                            <span class="timeline-date" data-i18n="experience.job3.date">Feb 2024 - Jul 2024</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li data-i18n="experience.job3.bullet1">Developed reusable systems including Asset Pipeline
+                                and FTUE, improving development efficiency.</li>
+                            <li data-i18n="experience.job3.bullet2">Implemented Shop, Ad Manager, and Reward systems to
+                                support scalable in-game monetization.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 data-i18n="experience.job4.title">Unity Developer Intern</h3>
+                                <h4 data-i18n="experience.job4.company">IDZ Digital</h4>
+                            </div>
+                            <span class="timeline-date" data-i18n="experience.job4.date">Sep 2023 - Oct 2023</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li data-i18n="experience.job4.bullet1">Gained hands-on experience in game development
+                                workflows and contributed to mobile game features in Unity.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2 class="section-title" data-i18n="projects.title">Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-img-placeholder unity-bg">
+                        <i class="fab fa-unity"></i>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 data-i18n="projects.proj1.title">Real Money Dice Game</h3>
+                            <span class="badge">Unity</span>
+                        </div>
+                        <ul class="project-details">
+                            <li data-i18n="projects.proj1.bullet1">Developed synchronized timer logic to ensure
+                                consistent gameplay across all players, devices, and time zones using server-driven
+                                time.</li>
+                            <li data-i18n="projects.proj1.bullet2">Implemented realistic dice-throwing mechanics using
+                                custom physics simulation in Unity.</li>
+                            <li data-i18n="projects.proj1.bullet3">Maintained seamless gameplay by integrating
+                                server-side data fetching and handling real-time updates.</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="link-btn"><i class="fas fa-video"></i> <span
+                                    data-i18n="projects.video">Video</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img-placeholder unreal-bg">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Unreal_Engine_4_logo.svg"
+                            style="width:50px; filter: invert(1);" alt="UE">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 data-i18n="projects.proj2.title">RPG Combat</h3>
+                            <span class="badge">Unreal Engine</span>
+                        </div>
+                        <ul class="project-details">
+                            <li data-i18n="projects.proj2.bullet1">Developed combat mechanics with enemy AI, state
+                                machines, and controller support.</li>
+                            <li data-i18n="projects.proj2.bullet2">Implemented save/load system and optimized gameplay
+                                performance.</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="link-btn"><i class="fab fa-github"></i> <span
+                                    data-i18n="projects.github">GitHub</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img-placeholder unity-bg">
+                        <i class="fab fa-unity"></i>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 data-i18n="projects.proj3.title">2D Chess</h3>
+                            <span class="badge">Unity</span>
+                        </div>
+                        <ul class="project-details">
+                            <li data-i18n="projects.proj3.bullet1">Implemented game logic using raycasting and custom
+                                move validation algorithms.</li>
+                            <li data-i18n="projects.proj3.bullet2">Designed efficient board interaction and piece
+                                management system.</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="link-btn"><i class="fab fa-github"></i> <span
+                                    data-i18n="projects.github">GitHub</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education-skills" class="section split-section">
+            <div class="education">
+                <h2 class="section-title" data-i18n="education.title">Education</h2>
+                <div class="edu-card">
+                    <h3 data-i18n="education.deg2.title">Master of Science in Game Technologies</h3>
+                    <h4 data-i18n="education.deg2.school">Bonn-Rhein-Sieg University of Applied Sciences, Germany
+                    </h4>
+                    <div class="edu-meta">
+                        <span data-i18n="education.deg2.date">September 2026 - August 2028</span>
+                        <span data-i18n="education.deg2.germanGrade">Soon</span>
+                    </div>
+                </div>
+                <div class="edu-card">
+                    <h3 data-i18n="education.deg1.title">Bachelor of Engineering in Information Technology</h3>
+                    <h4 data-i18n="education.deg1.school">Gujarat Technological University, India</h4>
+                    <div class="edu-meta">
+                        <span data-i18n="education.deg1.date">October 2020 - June 2024</span>
+                        <span>CGPA: 8.61/10 <span data-i18n="education.deg1.germanGrade">(German: 1.7)</span></span>
+                    </div>
+                </div>
+
+                <h2 class="section-title mt-4" data-i18n="languages.title">Languages</h2>
+                <div class="lang-grid">
+                    <div class="lang-item">
+                        <span class="lang-name" data-i18n="languages.english">English</span>
+                        <div class="lang-bar">
+                            <div class="fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="lang-item">
+                        <span class="lang-name" data-i18n="languages.german">German (Basic)</span>
+                        <div class="lang-bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                    <div class="lang-item">
+                        <span class="lang-name" data-i18n="languages.hindi">Hindi</span>
+                        <div class="lang-bar">
+                            <div class="fill" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <div class="lang-item">
+                        <span class="lang-name" data-i18n="languages.gujarti">Gujarati</span>
+                        <div class="lang-bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills" id="skills">
+                <h2 class="section-title" data-i18n="skills.title">Technical Skills</h2>
+
+                <div class="skill-category">
+                    <h3 data-i18n="skills.engines">Game Engines & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Unity</span>
+                        <span class="skill-tag">Unreal Engine</span>
+                        <span class="skill-tag">Photon</span>
+                        <span class="skill-tag">Three.js</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Perforce</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 data-i18n="skills.programming">Programming</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title" data-i18n="contact.title">Get In Touch</h2>
+            <div class="contact-container">
+                <p class="contact-desc" data-i18n="contact.desc">I'm currently looking for new opportunities and
+                    collaborations. Whether you have a question or just want to say hi, I'll try my best to get back to
+                    you!</p>
+                <div class="contact-links">
+                    <a href="mailto:anshpatel42002@gmail.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>anshpatel42002@gmail.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/patel-ansh/" target="_blank" class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="#" class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91-9662102423</span>
+                    </a>
+                    <a href="#" class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span data-i18n="contact.location">Hyderabad, India / Germany (Soon)</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p data-i18n="footer.text">© 2026 Ansh Patel. Built with Passion.</p>
+    </footer>
+
+
+
+    <script src="js/i18n.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
