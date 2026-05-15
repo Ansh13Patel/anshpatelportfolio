@@ -52,7 +52,8 @@
                 <div class="hero-actions">
                     <a href="#projects" class="btn btn-primary" data-i18n="hero.viewWork">View My Work</a>
                     <a href="#contact" class="btn btn-secondary" data-i18n="hero.contactMe">Contact Me</a>
-                    <a href="cv_en.pdf" target="_blank" class="btn btn-secondary cv-link" id="cv-link" data-i18n="hero.cv">CV</a>
+                    <a href="CV/Ansh_Patel_CV_EN.pdf" target="_blank" class="btn btn-secondary cv-link" id="cv-link"
+                        data-i18n="hero.cv">CV</a>
                 </div>
             </div>
             <div class="hero-graphics">
@@ -125,10 +126,12 @@
                             <span class="timeline-date" data-i18n="experience.job3.date">Feb 2024 - Jul 2024</span>
                         </div>
                         <ul class="timeline-details">
-                            <li data-i18n="experience.job3.bullet1">Developed reusable systems including Asset Pipeline
-                                and FTUE, improving development efficiency.</li>
-                            <li data-i18n="experience.job3.bullet2">Implemented Shop, Ad Manager, and Reward systems to
-                                support scalable in-game monetization.</li>
+                            <li data-i18n="experience.job3.bullet1">Developed core game prototypes and systems,
+                                including an Asset Pipeline and First-Time User Experience (FTUE), to accelerate and
+                                standardize future project development.</li>
+                            <li data-i18n="experience.job3.bullet2">Implemented and integrated Shop, Ad Manager, and
+                                Rewards systems, establishing the foundation for in-game monetization and sustained
+                                player engagement.</li>
                         </ul>
                     </div>
                 </div>
@@ -139,13 +142,55 @@
                         <div class="timeline-header">
                             <div>
                                 <h3 data-i18n="experience.job4.title">Unity Developer Intern</h3>
-                                <h4 data-i18n="experience.job4.company">IDZ Digital</h4>
+                                <h4 data-i18n="experience.job4.company">IDZ Digital, Mumbai, India (Remote)</h4>
                             </div>
                             <span class="timeline-date" data-i18n="experience.job4.date">Sep 2023 - Oct 2023</span>
                         </div>
                         <ul class="timeline-details">
-                            <li data-i18n="experience.job4.bullet1">Gained hands-on experience in game development
-                                workflows and contributed to mobile game features in Unity.</li>
+                            <li data-i18n="experience.job4.bullet1">Developed three interactive color game prototypes
+                                targeted for children aged 5–8, focusing on engaging and educational gameplay.</li>
+                            <li data-i18n="experience.job4.bullet2">Utilized shaders and raycasting to implement core
+                                mechanics, enhancing visual interactivity and user experience.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 data-i18n="experience.job5.title">Unity Developer Freelancer</h3>
+                                <h4 data-i18n="experience.job5.company">Invisible Fiction, Anand, India (Hybrid)</h4>
+                            </div>
+                            <span class="timeline-date" data-i18n="experience.job5.date">Dec 2021 - May 2022</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li data-i18n="experience.job5.bullet1">Developed gameplay systems for the hypercasual game
+                                prototype Ducklet, including a mobile third-person controller, level progression, and
+                                save/load systems.</li>
+                            <li data-i18n="experience.job5.bullet2">Implemented enemy AI using Unity NavMesh and created
+                                particle systems for core gameplay and visual effects.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 data-i18n="experience.job6.title">Unity Developer Intern</h3>
+                                <h4 data-i18n="experience.job6.company">Caden Enterprise, Nasik, India (Remote)</h4>
+                            </div>
+                            <span class="timeline-date" data-i18n="experience.job6.date">Jul 2021 - Aug 2021</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li data-i18n="experience.job6.bullet1">Developed an endless runner prototype featuring a
+                                shop system, save/load functionality, and a scalable multi-character system for adding
+                                new playable characters.</li>
+                            <li data-i18n="experience.job6.bullet2">Worked on a level-based hypercasual game prototype,
+                                implementing enemy gameplay systems and core combat interactions.</li>
                         </ul>
                     </div>
                 </div>
@@ -154,8 +199,19 @@
 
         <section id="projects" class="section">
             <h2 class="section-title" data-i18n="projects.title">Featured Projects</h2>
+
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all" data-i18n="projects.filter.all">All</button>
+                <button class="filter-btn" data-filter="playables"
+                    data-i18n="projects.filter.playables">Playables</button>
+                <button class="filter-btn" data-filter="mobile" data-i18n="projects.filter.mobile">Mobile Games</button>
+                <button class="filter-btn" data-filter="webgl" data-i18n="projects.filter.webgl">WebGL</button>
+                <button class="filter-btn" data-filter="personal" data-i18n="projects.filter.personal">Personal
+                    Project</button>
+            </div>
+
             <div class="project-grid">
-                <div class="project-card">
+                <div class="project-card" data-category="mobile personal">
                     <div class="project-img-placeholder unity-bg">
                         <i class="fab fa-unity"></i>
                     </div>
@@ -180,7 +236,7 @@
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-category="personal">
                     <div class="project-img-placeholder unreal-bg">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Unreal_Engine_4_logo.svg"
                             style="width:50px; filter: invert(1);" alt="UE">
@@ -203,7 +259,7 @@
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-category="personal">
                     <div class="project-img-placeholder unity-bg">
                         <i class="fab fa-unity"></i>
                     </div>
@@ -251,25 +307,25 @@
                 <h2 class="section-title mt-4" data-i18n="languages.title">Languages</h2>
                 <div class="lang-grid">
                     <div class="lang-item">
-                        <span class="lang-name" data-i18n="languages.english">English (B2)</span>
+                        <span class="lang-name" data-i18n="languages.english">English</span>
                         <div class="lang-bar">
                             <div class="fill" style="width: 90%;"></div>
                         </div>
                     </div>
                     <div class="lang-item">
-                        <span class="lang-name" data-i18n="languages.german">German (A2)</span>
+                        <span class="lang-name" data-i18n="languages.german">German (Basic)</span>
                         <div class="lang-bar">
                             <div class="fill" style="width: 40%;"></div>
                         </div>
                     </div>
                     <div class="lang-item">
-                        <span class="lang-name" data-i18n="languages.hindi">Hindi (C1)</span>
+                        <span class="lang-name" data-i18n="languages.hindi">Hindi</span>
                         <div class="lang-bar">
                             <div class="fill" style="width: 95%;"></div>
                         </div>
                     </div>
                     <div class="lang-item">
-                        <span class="lang-name" data-i18n="languages.gujarti">Gujarati (Native)</span>
+                        <span class="lang-name" data-i18n="languages.gujarati">Gujarati</span>
                         <div class="lang-bar">
                             <div class="fill" style="width: 100%;"></div>
                         </div>
@@ -297,6 +353,7 @@
                     <div class="skill-tags">
                         <span class="skill-tag">C#</span>
                         <span class="skill-tag">C++</span>
+                        <span class="skill-tag">C</span>
                         <span class="skill-tag">TypeScript</span>
                         <span class="skill-tag">JavaScript</span>
                     </div>
@@ -318,6 +375,10 @@
                     <a href="https://www.linkedin.com/in/patel-ansh/" target="_blank" class="contact-item">
                         <i class="fab fa-linkedin"></i>
                         <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/Ansh13Patel" target="_blank" class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
                     </a>
                     <a href="#" class="contact-item">
                         <i class="fas fa-phone"></i>

@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Update CV link
         const cvLink = document.getElementById('cv-link');
         if (cvLink) {
-            cvLink.href = lang === 'de' ? 'Ansh_Patel_CV_DE.pdf' : 'Ansh_Patel_CV_EN.pdf';
+            cvLink.href = lang === 'de' ? 'CV/Ansh_Patel_CV_DE.pdf' : 'CV/Ansh_Patel_CV_EN.pdf';
         }
     }
 
@@ -100,5 +100,32 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Project Filtering
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Remove active class from all buttons
+            filterBtns.forEach(b => b.classList.remove('active'));
+            // Add active class to clicked button
+            btn.classList.add('active');
+
+            const filterValue = btn.getAttribute('data-filter');
+
+            projectCards.forEach(card => {
+                if (filterValue === 'all') {
+                    card.style.display = 'flex';
+                } else {
+                    const categories = card.getAttribute('data-category');
+                    if (categories && categories.includes(filterValue)) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+        });
+    });
 
 });
