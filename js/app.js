@@ -128,4 +128,30 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Image Modal Logic
+    const modal = document.getElementById("image-modal");
+    const modalImg = document.getElementById("expanded-img");
+    const closeBtn = document.querySelector(".close-modal");
+    const previewImgs = document.querySelectorAll(".preview-img");
+
+    if (modal && modalImg && closeBtn) {
+        previewImgs.forEach(img => {
+            img.addEventListener("click", function() {
+                modal.style.display = "flex";
+                modalImg.src = this.src;
+            });
+        });
+
+        closeBtn.addEventListener("click", function() {
+            modal.style.display = "none";
+        });
+
+        // Close on clicking outside the image
+        modal.addEventListener("click", function(e) {
+            if (e.target !== modalImg) {
+                modal.style.display = "none";
+            }
+        });
+    }
+
 });
