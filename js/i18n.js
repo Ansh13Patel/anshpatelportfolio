@@ -8,7 +8,7 @@ const translations = {
 
         "hero.greeting": "Hello, I am",
         "hero.title": "Game Programmer",
-        "hero.summary": "Game Programmer with 2 year of professional experience, specializing in gameplay systems, multiplayer features, playable ads, WebGL, and mobile game development. Contributed to live operations on titles like Temple Run and delivered 20+ optimized playable ads and scalable gameplay systems. Currently upskilling in C++, graphics programming, and HTML5 Games, with plans to begin an M.Sc. Game Technologies at Bonn-Rhein-Sieg University of Applied Sciences in September 2026. Passionate about crafting highly engaging gameplay experiences while optimizing performance across platforms.",
+        "hero.summary": "Game Programmer with 2 year of professional experience, specializing in gameplay systems, multiplayer features, playable ads, WebGL, and mobile game development. Contributed to live operations on titles like Temple Run and delivered 20+ optimized playable ads and scalable gameplay systems. Currently upskilling in C++, graphics programming, and HTML5 Games, with plans to begin an M.Sc. in Game Technologies at Bonn-Rhein-Sieg University of Applied Sciences in September 2026. Passionate about crafting highly engaging gameplay experiences while optimizing performance across platforms.",
         "hero.viewWork": "View My Work",
         "hero.contactMe": "Contact Me",
         "hero.cv": "CV",
@@ -125,7 +125,7 @@ const translations = {
 
         "hero.greeting": "Hallo, ich bin",
         "hero.title": "Game Programmer",
-        "hero.summary": "Game Programmer mit 2 Jahren Berufserfahrung, spezialisiert auf Gameplay-Systeme, Multiplayer-Features, Playable Ads, WebGL- und Mobile-Game-Entwicklung. Mitwirkung an Live-Operations von Titeln wie Temple Run sowie Entwicklung von über 20 optimierten Playable Ads und skalierbaren Gameplay-Systemen. Derzeit Weiterbildung in C++, Grafikprogrammierung und HTML5 Games mit geplantem Beginn des M.Sc. Game Technologies an der Bonn-Rhein-Sieg University of Applied Sciences im September 2026. Leidenschaftlich darin, fesselnde Gamesrlebnisse zu entwickeln und gleichzeitig die Performance plattformübergreifend zu optimieren.",
+        "hero.summary": "Game Programmer mit 2 Jahren Berufserfahrung, spezialisiert auf Gameplay-Systeme, Multiplayer-Features, Playable Ads, WebGL- und Mobile-Game-Entwicklung. Mitwirkung an Live-Operations von Titeln wie Temple Run sowie Entwicklung von über 20 optimierten Playable Ads und skalierbaren Gameplay-Systemen. Derzeit Weiterbildung in C++, Grafikprogrammierung und HTML5 Games mit geplantem Beginn des M.Sc. in Game Technologies an der Bonn-Rhein-Sieg University of Applied Sciences im September 2026. Leidenschaftlich darin, fesselnde Gamesrlebnisse zu entwickeln und gleichzeitig die Performance plattformübergreifend zu optimieren.",
         "hero.viewWork": "Meine Arbeit ansehen",
         "hero.contactMe": "Kontaktiere mich",
         "hero.cv": "Lebenslauf",
@@ -145,7 +145,7 @@ const translations = {
         "experience.job2.bullet2": "Design einer reaktionsschnellen, plattformübergreifenden Benutzeroberfläche für Mobilgeräte und PC, um konsistente Leistung und Benutzerfreundlichkeit zu gewährleisten.",
         "experience.job2.bullet3": "Erstellung von 20+ Playableen Anzeigen mit einer Three.js-basierten Engine (unter 5 MB), wodurch die CTR um 85-120 % gesteigert wurde.",
 
-        "experience.job3.title": "Praktikant als Game Programmer",
+        "experience.job3.title": "Game Programmer Praktikant",
         "experience.job3.company": "Xansr Technologies, Hyderabad, Indien (Onsite)",
         "experience.job3.date": "Feb 2024 - Jul 2024",
         "experience.job3.bullet1": "Entwicklung von Kernprototypen, wiederverwendbaren Gameplay-Systemen, Asset-Pipelines und FTUE-Systemen zur Standardisierung zukünftiger Projekte.",
@@ -175,16 +175,16 @@ const translations = {
         "projects.filter.mobile": "Mobile Games",
         "projects.filter.webgl": "WebGL",
         "projects.filter.personal": "Persönliches Projekt",
-        "projects.proj1.title": "Echtgeld-Würfelspiel",
+        "projects.proj1.title": "Real Money Dice Game",
         "projects.proj1.bullet1": "Entwicklung einer synchronisierten Timer-Logik zur Gewährleistung eines konsistenten Gameplays über alle Gamesr, Geräte und Zeitzonen hinweg mithilfe von servergesteuerter Zeit.",
         "projects.proj1.bullet2": "Implementierung realistischer Würfelmechaniken mit benutzerdefinierter Physiksimulation in Unity.",
         "projects.proj1.bullet3": "Aufrechterhaltung eines nahtlosen Gameplays durch Integration von serverseitigem Datenabruf und Echtzeit-Updates.",
 
-        "projects.proj2.title": "RPG-Kampfsystem",
+        "projects.proj2.title": "RPG Combat",
         "projects.proj2.bullet1": "Entwicklung von Kampfmechaniken mit Gegner-KI, Zustandsautomaten und Controller-Unterstützung.",
         "projects.proj2.bullet2": "Implementierung eines Speicher-/Ladesystems und Optimierung der Gameplay-Leistung.",
 
-        "projects.proj3.title": "2D Schach",
+        "projects.proj3.title": "2D Chess",
         "projects.proj3.bullet1": "Implementierung der Spiellogik mit Raycasting und benutzerdefinierten Algorithmen zur Zugvalidierung.",
         "projects.proj3.bullet2": "Design eines effizienten Systems für Brettinteraktion und Figurenverwaltung.",
 
@@ -207,7 +207,7 @@ const translations = {
         "projects.github": "GitHub",
 
         "education.title": "Akademische Ausbildung",
-        "education.deg1.title": "Bachelor of Engineering in Informationstechnologie",
+        "education.deg1.title": "Bachelor of Engineering in Information Technology",
         "education.deg1.school": "Gujarat Technological University, Indien",
         "education.deg1.date": "Okt 2020 - Juni 2024",
         "education.deg1.germanGrade": "(Deutsche Note: 1.7)",
@@ -221,7 +221,7 @@ const translations = {
         "languages.english": "Englisch (B2)",
         "languages.german": "Deutsch (A2)",
         "languages.hindi": "Hindi (C1)",
-        "languages.gujarati": "Gujarati (Native)",
+        "languages.gujarati": "Gujarati (Muttersprache)",
 
         "skills.title": "Technische Fähigkeiten",
         "skills.engines": "Game-Engines & Werkzeuge",

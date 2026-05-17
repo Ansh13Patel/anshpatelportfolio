@@ -226,7 +226,7 @@
                                 server-side data fetching and handling real-time updates.</li>
                         </ul>
                         <div class="project-links">
-                            <a href="#" class="link-btn"><i class="fas fa-video"></i> <span
+                            <a href="Resources/Videos/Gundu Ata Gameplay.mp4" class="link-btn video-link"><i class="fas fa-video"></i> <span
                                     data-i18n="projects.video">Video</span></a>
                         </div>
                     </div>
@@ -249,6 +249,8 @@
                                 performance.</li>
                         </ul>
                         <div class="project-links">
+                            <a href="Resources/Videos/RPG Combat.mp4" class="link-btn video-link"><i class="fas fa-video"></i> <span
+                                    data-i18n="projects.video">Video</span></a>
                             <a href="#" class="link-btn"><i class="fab fa-github"></i> <span
                                     data-i18n="projects.github">GitHub</span></a>
                         </div>
@@ -271,6 +273,8 @@
                                 management system.</li>
                         </ul>
                         <div class="project-links">
+                            <a href="Resources/Videos/Chess 2D.mp4" class="link-btn video-link"><i class="fas fa-video"></i> <span
+                                    data-i18n="projects.video">Video</span></a>
                             <a href="#" class="link-btn"><i class="fab fa-github"></i> <span
                                     data-i18n="projects.github">GitHub</span></a>
                         </div>
@@ -481,10 +485,14 @@
         <p data-i18n="footer.text">© 2026 Ansh Patel. Built with Passion.</p>
     </footer>
 
-    <!-- Image Preview Modal -->
-    <div id="image-modal" class="image-modal">
-        <span class="close-modal">&times;</span>
-        <img class="image-modal-content" id="expanded-img">
+    <!-- Video Preview Modal -->
+    <div id="video-modal" class="video-modal-overlay">
+        <div class="video-modal-card">
+            <div class="video-modal-header">
+                <span class="close-video-modal">&times;</span>
+            </div>
+            <video id="expanded-video" controls></video>
+        </div>
     </div>
 
     <script src="js/i18n.js"></script>

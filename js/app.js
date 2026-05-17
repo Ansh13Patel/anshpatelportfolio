@@ -128,28 +128,35 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Image Modal Logic
-    const modal = document.getElementById("image-modal");
-    const modalImg = document.getElementById("expanded-img");
-    const closeBtn = document.querySelector(".close-modal");
-    const previewImgs = document.querySelectorAll(".preview-img");
+    // Video Modal Logic
+    const videoModal = document.getElementById("video-modal");
+    const videoModalContent = document.getElementById("expanded-video");
+    const closeVideoBtn = document.querySelector(".close-video-modal");
+    const videoLinks = document.querySelectorAll(".video-link");
 
-    if (modal && modalImg && closeBtn) {
-        previewImgs.forEach(img => {
-            img.addEventListener("click", function() {
-                modal.style.display = "flex";
-                modalImg.src = this.src;
+    if (videoModal && videoModalContent && closeVideoBtn) {
+        videoLinks.forEach(link => {
+            link.addEventListener("click", function(e) {
+                e.preventDefault(); // Prevent default link behavior
+                videoModal.style.display = "flex";
+                videoModalContent.src = this.getAttribute("href");
+                videoModalContent.play(); // Auto-play the video
             });
         });
 
-        closeBtn.addEventListener("click", function() {
-            modal.style.display = "none";
+        // Close the modal when the close button is clicked
+        closeVideoBtn.addEventListener("click", function() {
+            videoModal.style.display = "none";
+            videoModalContent.pause(); // Pause video
+            videoModalContent.src = ""; // Clear src so it doesn't keep downloading
         });
 
-        // Close on clicking outside the image
-        modal.addEventListener("click", function(e) {
-            if (e.target !== modalImg) {
-                modal.style.display = "none";
+        // Close on clicking outside the card
+        videoModal.addEventListener("click", function(e) {
+            if (e.target === videoModal) {
+                videoModal.style.display = "none";
+                videoModalContent.pause(); // Pause video
+                videoModalContent.src = ""; // Clear src
             }
         });
     }
