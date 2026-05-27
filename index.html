@@ -207,6 +207,72 @@
             </div>
 
             <div class="project-grid">
+                <!-- Project: Temple Run 1 -->
+                <div class="project-card" data-category="mobile">
+                    <div class="project-img-placeholder" style="background: #0d0d16; display: flex; align-items: center; justify-content: center; padding: 1.5rem;">
+                        <img src="Resources/Images/Temple Run 1 Logo.jpeg" style="max-height: 100%; max-width: 100%; border-radius: 24px; object-fit: contain; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" alt="Temple Run 1">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 data-i18n="projects.templerun1.title">Temple Run 1</h3>
+                            <span class="badge">Unity</span>
+                        </div>
+                        <ul class="project-details">
+                            <li data-i18n="projects.templerun1.bullet1">Managed live configuration systems and maintained internal tools to support content updates and live operations.</li>
+                            <li data-i18n="projects.templerun1.bullet2">Developed a seasonal theme system enabling dynamic temple gate environments based on configured dates and events.</li>
+                            <li data-i18n="projects.templerun1.bullet3">Improved feature reliability by maintaining and updating gameplay-related configurations for live releases.</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.imangi.templerun&hl=en_IN" target="_blank" class="link-btn"><i class="fab fa-google-play"></i> <span data-i18n="projects.playstore">Play Store</span></a>
+                            <a href="https://apps.apple.com/us/app/temple-run/id420009108" target="_blank" class="link-btn"><i class="fab fa-apple"></i> <span data-i18n="projects.appstore">App Store</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project: Temple Run 2 -->
+                <div class="project-card" data-category="mobile">
+                    <div class="project-img-placeholder" style="background: #0d0d16; display: flex; align-items: center; justify-content: center; padding: 1.5rem;">
+                        <img src="Resources/Images/Temple Run 2 Logo.jpeg" style="max-height: 100%; max-width: 100%; border-radius: 24px; object-fit: contain; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" alt="Temple Run 2">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 data-i18n="projects.templerun2.title">Temple Run 2</h3>
+                            <span class="badge">Unity</span>
+                        </div>
+                        <ul class="project-details">
+                            <li data-i18n="projects.templerun2.bullet1">Resolved character-related issues and implemented gameplay/tool fixes to improve game stability and player experience.</li>
+                            <li data-i18n="projects.templerun2.bullet2">Managed live configurations using AWS S3 and Firebase, and contributed to migrating S3 cache files to Cloudflare, reducing infrastructure costs by ~50%.</li>
+                            <li data-i18n="projects.templerun2.bullet3">Refined reimbursement systems and supported in-game implementation to ensure smooth live operations.</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.imangi.templerun2&hl=en_IN" target="_blank" class="link-btn"><i class="fab fa-google-play"></i> <span data-i18n="projects.playstore">Play Store</span></a>
+                            <a href="https://apps.apple.com/us/app/temple-run-2-endless-escape/id572395608" target="_blank" class="link-btn"><i class="fab fa-apple"></i> <span data-i18n="projects.appstore">App Store</span></a>
+                            <a href="Resources/Images/Temple Run 2 Credits.jpeg" class="link-btn image-link"><i class="fas fa-award"></i> <span data-i18n="projects.credits">Credits</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project: Temple Run Plus -->
+                <div class="project-card" data-category="mobile">
+                    <div class="project-img-placeholder" style="background: #0d0d16; display: flex; align-items: center; justify-content: center; padding: 1.5rem;">
+                        <img src="Resources/Images/Temple Run Plus Logo.jpeg" style="max-height: 100%; max-width: 100%; border-radius: 24px; object-fit: contain; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" alt="Temple Run Plus">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 data-i18n="projects.templerunplus.title">Temple Run Plus</h3>
+                            <span class="badge" data-i18n="projects.tag.applearcade">Apple Arcade</span>
+                        </div>
+                        <ul class="project-details">
+                            <li data-i18n="projects.templerunplus.bullet1">Implemented and maintained new character and global challenges.</li>
+                            <li data-i18n="projects.templerunplus.bullet2">Resolved build rejections and ensured compliance with Apple Arcade standards for successful releases.</li>
+                            <li data-i18n="projects.templerunplus.bullet3">Improved cross-platform consistency through iCloud synchronization and fixing Apple TV and controller/joystick-related issues.</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://apps.apple.com/us/app/temple-run/id1633285841" target="_blank" class="link-btn"><i class="fab fa-apple"></i> <span data-i18n="projects.tag.applearcade">Apple Arcade</span></a>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="project-card" data-category="mobile personal">
                     <div class="project-img-placeholder unity-bg">
                         <i class="fab fa-unity"></i>
@@ -492,6 +558,7 @@
                 <span class="close-video-modal">&times;</span>
             </div>
             <video id="expanded-video" controls></video>
+            <img id="expanded-image" src="" alt="Preview" style="display: none; width: 100%; max-height: 75vh; border-radius: 8px; object-fit: contain; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);">
         </div>
     </div>
 

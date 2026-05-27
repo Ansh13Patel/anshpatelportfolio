@@ -80,7 +80,23 @@ const translations = {
         "projects.drillcollect.title": "Drill & Collect: idle mine dig",
         "projects.drillcollect.desc": "My first playable ad project where I implemented realistic drilling physics to closely replicate the original game experience. Optimized soil physics to ensure smooth performance on low-end devices and developed functionalities for different equipment, including blades, vacuum systems, and monster blades.",
 
+        "projects.templerun1.title": "Temple Run 1",
+        "projects.templerun1.bullet1": "Managed live configuration systems and maintained internal tools to support content updates and live operations.",
+        "projects.templerun1.bullet2": "Developed a seasonal theme system enabling dynamic temple gate environments based on configured dates and events.",
+        "projects.templerun1.bullet3": "Improved feature reliability by maintaining and updating gameplay-related configurations for live releases.",
+
+        "projects.templerun2.title": "Temple Run 2",
+        "projects.templerun2.bullet1": "Resolved character-related issues and implemented gameplay/tool fixes to improve game stability and player experience.",
+        "projects.templerun2.bullet2": "Managed live configurations using AWS S3 and Firebase, and contributed to migrating S3 cache files to Cloudflare, reducing infrastructure costs by ~50%.",
+        "projects.templerun2.bullet3": "Refined reimbursement systems and supported in-game implementation to ensure smooth live operations.",
+
+        "projects.templerunplus.title": "Temple Run Plus",
+        "projects.templerunplus.bullet1": "Implemented and maintained new character and global challenges.",
+        "projects.templerunplus.bullet2": "Resolved build rejections and ensured compliance with Apple Arcade standards for successful releases.",
+        "projects.templerunplus.bullet3": "Improved cross-platform consistency through iCloud synchronization and fixing Apple TV and controller/joystick-related issues.",
+
         "projects.tag.playableads": "PLAYABLE ADS",
+        "projects.tag.applearcade": "Apple Arcade",
         "projects.playstore": "Play Store",
         "projects.appstore": "App Store",
         "projects.playable": "Playable",
@@ -88,6 +104,7 @@ const translations = {
         "projects.playable2": "Playable 2",
         "projects.video": "Video",
         "projects.github": "GitHub",
+        "projects.credits": "Credits",
 
         "education.title": "Education",
         "education.deg1.title": "Bachelor of Engineering in Information Technology",
@@ -197,7 +214,23 @@ const translations = {
         "projects.drillcollect.title": "Drill & Collect: idle mine dig",
         "projects.drillcollect.desc": "Mein erstes Playable-Ad-Projekt, bei dem ich realistische Bohrphysik implementiert habe, um das ursprüngliche Gamesrlebnis genau nachzubilden. Ich habe die Bodenphysik optimiert, um eine reibungslose Leistung auf Low-End-Geräten sicherzustellen, und Funktionalitäten für verschiedene Ausrüstungen entwickelt, darunter Klingen, Vakuumsysteme und Monsterklingen.",
 
+        "projects.templerun1.title": "Temple Run 1",
+        "projects.templerun1.bullet1": "Verwaltete Live-Konfigurationssysteme und pflegte interne Tools zur Unterstützung von Inhaltsaktualisierungen und Live-Operations.",
+        "projects.templerun1.bullet2": "Entwicklung eines saisonalen Theme-Systems, das dynamische Tempeltor-Umgebungen basierend auf konfigurierten Daten und Ereignissen ermöglicht.",
+        "projects.templerun1.bullet3": "Verbesserung der Feature-Zuverlässigkeit durch Pflege und Aktualisierung von gameplaybezogenen Konfigurationen für Live-Releases.",
+
+        "projects.templerun2.title": "Temple Run 2",
+        "projects.templerun2.bullet1": "Behebung von charakterbezogenen Problemen und Implementierung von Gameplay-/Tool-Fixes zur Verbesserung der Spielstabilität und des Spielerlebnisses.",
+        "projects.templerun2.bullet2": "Verwaltung von Live-Konfigurationen mit AWS S3 und Firebase und Mitwirkung bei der Migration von S3-Cache-Dateien zu Cloudflare, wodurch die Infrastrukturkosten um ca. 50 % gesenkt wurden.",
+        "projects.templerun2.bullet3": "Verfeinerung von Rückerstattungssystemen und Unterstützung bei der In-Game-Implementierung, um reibungslose Live-Operations zu gewährleisten.",
+
+        "projects.templerunplus.title": "Temple Run Plus",
+        "projects.templerunplus.bullet1": "Implementierung und Pflege neuer Charakter- und globaler Herausforderungen.",
+        "projects.templerunplus.bullet2": "Behebung von Build-Ablehnungen und Sicherstellung der Einhaltung von Apple Arcade-Standards für erfolgreiche Releases.",
+        "projects.templerunplus.bullet3": "Verbesserung der plattformübergreifenden Konsistenz durch iCloud-Synchronisation und Behebung von Problemen mit Apple TV und Controllern/Joysticks.",
+
         "projects.tag.playableads": "PLAYABLE ADS",
+        "projects.tag.applearcade": "Apple Arcade",
         "projects.playstore": "Play Store",
         "projects.appstore": "App Store",
         "projects.playable": "Playable",
@@ -205,6 +238,7 @@ const translations = {
         "projects.playable2": "Playable 2",
         "projects.video": "Video",
         "projects.github": "GitHub",
+        "projects.credits": "Credits",
 
         "education.title": "Akademische Ausbildung",
         "education.deg1.title": "Bachelor of Engineering in Information Technology",

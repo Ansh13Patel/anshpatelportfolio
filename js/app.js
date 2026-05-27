@@ -128,35 +128,69 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Video Modal Logic
+    // Media Modal Logic (Video and Image)
     const videoModal = document.getElementById("video-modal");
     const videoModalContent = document.getElementById("expanded-video");
+    const imageModalContent = document.getElementById("expanded-image");
     const closeVideoBtn = document.querySelector(".close-video-modal");
     const videoLinks = document.querySelectorAll(".video-link");
+    const imageLinks = document.querySelectorAll(".image-link");
 
-    if (videoModal && videoModalContent && closeVideoBtn) {
+    if (videoModal && closeVideoBtn) {
+        function openModal(isImage, src) {
+            videoModal.style.display = "flex";
+            if (isImage) {
+                if (videoModalContent) {
+                    videoModalContent.style.display = "none";
+                    videoModalContent.src = "";
+                }
+                if (imageModalContent) {
+                    imageModalContent.style.display = "block";
+                    imageModalContent.src = src;
+                }
+            } else {
+                if (imageModalContent) {
+                    imageModalContent.style.display = "none";
+                    imageModalContent.src = "";
+                }
+                if (videoModalContent) {
+                    videoModalContent.style.display = "block";
+                    videoModalContent.src = src;
+                    videoModalContent.play();
+                }
+            }
+        }
+
+        function closeModal() {
+            videoModal.style.display = "none";
+            if (videoModalContent) {
+                videoModalContent.pause();
+                videoModalContent.src = "";
+            }
+            if (imageModalContent) {
+                imageModalContent.src = "";
+            }
+        }
+
         videoLinks.forEach(link => {
             link.addEventListener("click", function(e) {
-                e.preventDefault(); // Prevent default link behavior
-                videoModal.style.display = "flex";
-                videoModalContent.src = this.getAttribute("href");
-                videoModalContent.play(); // Auto-play the video
+                e.preventDefault();
+                openModal(false, this.getAttribute("href"));
             });
         });
 
-        // Close the modal when the close button is clicked
-        closeVideoBtn.addEventListener("click", function() {
-            videoModal.style.display = "none";
-            videoModalContent.pause(); // Pause video
-            videoModalContent.src = ""; // Clear src so it doesn't keep downloading
+        imageLinks.forEach(link => {
+            link.addEventListener("click", function(e) {
+                e.preventDefault();
+                openModal(true, this.getAttribute("href"));
+            });
         });
 
-        // Close on clicking outside the card
+        closeVideoBtn.addEventListener("click", closeModal);
+
         videoModal.addEventListener("click", function(e) {
             if (e.target === videoModal) {
-                videoModal.style.display = "none";
-                videoModalContent.pause(); // Pause video
-                videoModalContent.src = ""; // Clear src
+                closeModal();
             }
         });
     }
