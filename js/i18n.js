@@ -142,7 +142,9 @@ const translations = {
         "contact.desc": "I'm currently looking for new opportunities and collaborations. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
         "contact.location": "Hyderabad, India / Bonn, Germany (Soon)",
 
-        "footer.text": "© 2026 Ansh Patel. Built with Passion."
+        "lor.xansr": "Letter of Recommendation – Xansr Technologies",
+        "lor.funcell": "Letter of Recommendation – Funcell Games",
+
     },
     de: {
         "nav.about": "Über mich",
