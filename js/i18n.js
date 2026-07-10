@@ -142,7 +142,7 @@ const translations = {
 
         "contact.title": "Get In Touch",
         "contact.desc": "I'm currently looking for new opportunities and collaborations. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
-        "contact.location": "Hyderabad, India / Bonn, Germany (Soon)",
+        "contact.location": "Hyderabad, India / Relocating to Bonn, Germany (September 2026)",
 
         "lor.xansr": "Letter of Recommendation – Xansr Technologies",
         "lor.funcell": "Letter of Recommendation – Funcell Games",
@@ -291,7 +291,7 @@ const translations = {
 
         "contact.title": "Kontakt Aufnehmen",
         "contact.desc": "Ich bin derzeit auf der Suche nach neuen Möglichkeiten und Kooperationen. Ob Sie eine Frage haben oder einfach nur Hallo sagen möchten, ich werde mein Bestes tun, um mich bei Ihnen zu melden!",
-        "contact.location": "Hyderabad, Indien / Bonn, Deutschland (Bald)",
+        "contact.location": "Hyderabad, Indien / Umzug nach Bonn, Deutschland (September 2026)",
 
         "footer.text": "© 2026 Ansh Patel. Mit Leidenschaft entwickelt."
     }
