@@ -146,7 +146,7 @@ const translations = {
 
         "lor.xansr": "Letter of Recommendation – Xansr Technologies",
         "lor.funcell": "Letter of Recommendation – Funcell Games",
-
+        "lor.gtu": "Letter of Recommendation – GTU",
     },
     de: {
         "nav.about": "Über mich",
@@ -292,7 +292,9 @@ const translations = {
         "contact.title": "Kontakt Aufnehmen",
         "contact.desc": "Ich bin derzeit auf der Suche nach neuen Möglichkeiten und Kooperationen. Ob Sie eine Frage haben oder einfach nur Hallo sagen möchten, ich werde mein Bestes tun, um mich bei Ihnen zu melden!",
         "contact.location": "Hyderabad, Indien / Umzug nach Bonn, Deutschland (September 2026)",
-
+        "lor.xansr": "Empfehlungsschreiben – Xansr Technologies",
+        "lor.funcell": "Empfehlungsschreiben – Funcell Games",
+        "lor.gtu": "Empfehlungsschreiben – GTU",
         "footer.text": "© 2026 Ansh Patel. Mit Leidenschaft entwickelt."
     }
 };

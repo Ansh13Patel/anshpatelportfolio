@@ -846,6 +846,12 @@ main {
     border-radius: 8px;
 }
 
+.edu-lor-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .mt-4 {
     margin-top: 3rem;
 }
@@ -1151,6 +1157,10 @@ footer {
     .edu-meta {
         flex-direction: column;
         gap: 0.5rem;
+    }
+
+    .edu-lor-container {
+        justify-content: flex-start;
     }
 }
 
