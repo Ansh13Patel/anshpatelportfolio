@@ -232,7 +232,7 @@ main {
 }
 
 .section {
-    padding: 10rem 5% 5rem;
+    padding: 6rem 5% 3rem;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -439,8 +439,15 @@ main {
 }
 
 @keyframes pulse {
-    0% { transform: scale(0.95); opacity: 0.5; }
-    100% { transform: scale(1.05); opacity: 0.8; }
+    0% {
+        transform: scale(0.95);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
 }
 
 .profile-img {
@@ -1147,7 +1154,7 @@ footer {
     }
 
     .section {
-        padding: 6rem 5% 3rem;
+        padding: 4.5rem 5% 2rem;
     }
 
     .name {
@@ -1207,4 +1214,69 @@ footer {
     .timeline::before {
         left: 2px;
     }
+}
+
+/* Hidden project cards (shown after clicking "Show All") */
+.project-card.hidden-project {
+    display: none;
+}
+
+/* Show All Projects Button Container */
+.show-all-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+.show-all-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.85rem 2.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    border: 1px solid rgba(139, 92, 246, 0.4);
+    background: rgba(139, 92, 246, 0.1);
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    letter-spacing: 0.02em;
+}
+
+.show-all-btn:hover {
+    background: rgba(139, 92, 246, 0.25);
+    border-color: rgba(139, 92, 246, 0.7);
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.25);
+    transform: translateY(-2px);
+}
+
+.show-all-btn i {
+    font-size: 0.9rem;
+    transition: transform var(--transition-fast);
+}
+
+.show-all-btn.expanded i {
+    transform: rotate(90deg);
+}
+
+.show-all-btn:active {
+    transform: scale(0.94);
+}
+
+/* Card reveal animation for Show All / Show Less */
+@keyframes cardFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(24px) scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.project-card.card-animate-in {
+    animation: cardFadeIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
 }

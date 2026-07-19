@@ -100,33 +100,123 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Project Filtering
+    // Project Filtering & Show All
     const filterBtns = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
+    const showAllBtn = document.getElementById('show-all-projects-btn');
+    const showAllBtnText = document.getElementById('show-all-btn-text');
+    const projectsSection = document.getElementById('projects');
+    let allProjectsVisible = false;
+
+    function animateCardIn(card, delay = 0) {
+        card.classList.remove('card-animate-in');
+        // Force reflow so the animation restarts even if the class was already applied
+        void card.offsetWidth;
+        card.style.animationDelay = `${delay}ms`;
+        card.classList.add('card-animate-in');
+    }
+
+    function applyFilter(filterValue) {
+        allProjectsVisible = false;
+        if (showAllBtn) {
+            showAllBtn.classList.remove('expanded');
+            showAllBtn.querySelector('i').className = 'fas fa-th-large';
+        }
+
+        let visibleCount = 0;
+        let animIndex = 0;
+        projectCards.forEach(card => {
+            const categories = card.getAttribute('data-category');
+            const matches = filterValue === 'all' || (categories && categories.includes(filterValue));
+
+            if (matches) {
+                visibleCount++;
+                if (visibleCount <= 3) {
+                    card.style.display = 'flex';
+                    card.classList.remove('hidden-project');
+                    animateCardIn(card, animIndex * 80);
+                    animIndex++;
+                } else {
+                    card.style.display = 'none';
+                    card.classList.add('hidden-project');
+                    card.classList.remove('card-animate-in');
+                }
+            } else {
+                card.style.display = 'none';
+                card.classList.remove('hidden-project');
+                card.classList.remove('card-animate-in');
+            }
+        });
+
+        // Show/hide the "Show All" button
+        if (showAllBtn) {
+            showAllBtn.parentElement.style.display = visibleCount > 3 ? 'flex' : 'none';
+        }
+
+        // Update button text based on current language
+        updateShowAllBtnText();
+    }
+
+    function updateShowAllBtnText() {
+        if (!showAllBtnText) return;
+        const lang = localStorage.getItem('preferredLang') || 'en';
+        if (allProjectsVisible) {
+            showAllBtnText.textContent = translations[lang] && translations[lang]['projects.showLess']
+                ? translations[lang]['projects.showLess'] : 'Show Less';
+        } else {
+            showAllBtnText.textContent = translations[lang] && translations[lang]['projects.showAll']
+                ? translations[lang]['projects.showAll'] : 'Show All Projects';
+        }
+    }
 
     filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
-            // Remove active class from all buttons
             filterBtns.forEach(b => b.classList.remove('active'));
-            // Add active class to clicked button
             btn.classList.add('active');
-
-            const filterValue = btn.getAttribute('data-filter');
-
-            projectCards.forEach(card => {
-                if (filterValue === 'all') {
-                    card.style.display = 'flex';
-                } else {
-                    const categories = card.getAttribute('data-category');
-                    if (categories && categories.includes(filterValue)) {
-                        card.style.display = 'flex';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                }
-            });
+            applyFilter(btn.getAttribute('data-filter'));
         });
     });
+
+    // Show All / Show Less button
+    if (showAllBtn) {
+        showAllBtn.addEventListener('click', () => {
+            const activeFilter = document.querySelector('.filter-btn.active');
+            const filterValue = activeFilter ? activeFilter.getAttribute('data-filter') : 'all';
+            allProjectsVisible = !allProjectsVisible;
+
+            if (allProjectsVisible) {
+                showAllBtn.classList.add('expanded');
+                showAllBtn.querySelector('i').className = 'fas fa-chevron-up';
+                // Show all matching cards, animating in the ones that were previously hidden
+                let animIndex = 0;
+                projectCards.forEach(card => {
+                    const categories = card.getAttribute('data-category');
+                    if (filterValue === 'all' || (categories && categories.includes(filterValue))) {
+                        const wasHidden = card.classList.contains('hidden-project');
+                        card.style.display = 'flex';
+                        card.classList.remove('hidden-project');
+                        if (wasHidden) {
+                            animateCardIn(card, animIndex * 80);
+                            animIndex++;
+                        }
+                    }
+                });
+            } else {
+                showAllBtn.classList.remove('expanded');
+                showAllBtn.querySelector('i').className = 'fas fa-th-large';
+                applyFilter(filterValue);
+
+                // Pan back to the projects section so the collapse doesn't leave the view stranded
+                if (projectsSection) {
+                    projectsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }
+            updateShowAllBtnText();
+        });
+    }
+
+    // Initialize with first 3 projects visible
+    applyFilter('all');
 
     // Media Modal Logic (Video and Image)
     const videoModal = document.getElementById("video-modal");
@@ -173,14 +263,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         videoLinks.forEach(link => {
-            link.addEventListener("click", function(e) {
+            link.addEventListener("click", function (e) {
                 e.preventDefault();
                 openModal(false, this.getAttribute("href"));
             });
         });
 
         imageLinks.forEach(link => {
-            link.addEventListener("click", function(e) {
+            link.addEventListener("click", function (e) {
                 e.preventDefault();
                 openModal(true, this.getAttribute("href"));
             });
@@ -188,7 +278,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         closeVideoBtn.addEventListener("click", closeModal);
 
-        videoModal.addEventListener("click", function(e) {
+        videoModal.addEventListener("click", function (e) {
             if (e.target === videoModal) {
                 closeModal();
             }

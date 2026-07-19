@@ -117,6 +117,8 @@ const translations = {
         "projects.video": "Video",
         "projects.github": "GitHub",
         "projects.credits": "Credits",
+        "projects.showAll": "Show All Projects",
+        "projects.showLess": "Show Less",
 
         "education.title": "Education",
         "education.deg1.title": "Bachelor of Engineering in Information Technology",
@@ -266,9 +268,13 @@ const translations = {
         "projects.video": "Video",
         "projects.github": "GitHub",
         "projects.credits": "Credits",
+        "projects.showAll": "Alle Projekte anzeigen",
+        "projects.showLess": "Weniger anzeigen",
+
 
         "education.title": "Akademische Ausbildung",
         "education.deg1.title": "Bachelor of Engineering in Information Technology",
+
         "education.deg1.school": "Gujarat Technological University, Indien",
         "education.deg1.date": "Okt 2020 - Juni 2024",
         "education.deg1.germanGrade": "(Deutsche Note: 1.7)",
