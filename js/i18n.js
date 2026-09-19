@@ -9,8 +9,9 @@ const translations = {
         "nav.contact": "Contact",
 
         "hero.greeting": "Hello, I am",
-        "hero.title": "Game Programmer",
-        "hero.summary": "Game Programmer with 2+ years of professional experience specializing in gameplay systems, multiplayer features, playable ads, WebGL, and mobile game development. Contributed to live operations on titles like Temple Run, delivered 20+ optimized playable ads, and developing Ethernal Engine, a custom C++/OpenGL game engine to deepen expertise in graphics programming and engine architecture. Currently upskilling in C++, graphics programming, and Unreal Engine, with plans to begin an M.Sc. in Game Technologies at Bonn-Rhein-Sieg University of Applied Sciences in September 2026. Passionate about building high-performance game systems, rendering technologies, and engaging gameplay experiences across platforms.",
+        "hero.title": "Game, Graphics & Simulation Engineer",
+        "hero.availability": "Seeking Werkstudent Role in Game, Graphics & Simulation | Work Authorization: 20h/week",
+        "hero.summary": "Engineer with 2+ years of professional experience specializing in gameplay systems, graphics programming, physics & real-time simulations, multiplayer features, playable ads, WebGL, and mobile game development. Contributed to live operations on titles like Temple Run, delivered 20+ optimized playable ads, and developed Ethernal Engine (a custom C++/OpenGL game engine). Currently pursuing an M.Sc. in Game Technologies at Bonn-Rhein-Sieg University of Applied Sciences in Bonn, Germany. Actively seeking Werkstudent (Working Student) roles in Game, Graphics & Simulation with work authorization for 20h/week.",
         "hero.viewWork": "View My Work",
         "hero.contactMe": "Contact Me",
         "hero.cv": "CV",
@@ -129,7 +130,7 @@ const translations = {
         "education.deg2.title": "Master of Science in Game Technologies",
         "education.deg2.school": "Bonn-Rhein-Sieg University of Applied Science, Germany",
         "education.deg2.date": "Sep 2026 - Aug 2028",
-        "education.deg2.germanGrade": "Will Start Soon",
+        "education.deg2.germanGrade": "",
 
         "languages.title": "Languages",
         "languages.english": "English (B2)",
@@ -139,12 +140,12 @@ const translations = {
 
         "skills.title": "Technical Skills",
         "skills.programming": "Programming Languages",
-        "skills.engines": "Game Engines & Graphics",
+        "skills.engines": "Game Engines, Graphics & Simulation",
         "skills.libraries": "Libraries & Tools",
 
         "contact.title": "Get In Touch",
-        "contact.desc": "I'm currently looking for new opportunities and collaborations. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
-        "contact.location": "Hyderabad, India / Relocating to Bonn, Germany (September 2026)",
+        "contact.desc": "I am currently based in Bonn, Germany and actively looking for Werkstudent (Working Student) roles in Game, Graphics & Simulation Engineering (Work Authorization: 20h/week). Whether you have an open position or just want to connect, feel free to reach out!",
+        "contact.location": "Bonn, Germany",
 
         "lor.xansr": "Letter of Recommendation – Xansr Technologies",
         "lor.funcell": "Letter of Recommendation – Funcell Games",
@@ -160,8 +161,9 @@ const translations = {
         "nav.contact": "Kontakt",
 
         "hero.greeting": "Hallo, ich bin",
-        "hero.title": "Game Programmer",
-        "hero.summary": "Game Programmer mit 2+ Jahren Berufserfahrung, spezialisiert auf Gameplay-Systeme, Multiplayer-Features, Playable Ads, WebGL- und Mobile-Game-Entwicklung. Mitwirkung an Live-Operations von Titeln wie Temple Run, Entwicklung von über 20 optimierten Playable Ads und der Ethernal Engine, einer maßgeschneiderten C++/OpenGL Game-Engine zur Vertiefung der Kenntnisse in Grafikprogrammierung und Engine-Architektur. Derzeit Weiterbildung in C++, Grafikprogrammierung und Unreal Engine, mit geplantem Beginn des M.Sc. in Game Technologies an der Hochschule Bonn-Rhein-Sieg im September 2026. Leidenschaftlich darin, leistungsstarke Game-Systeme, Rendering-Technologien und fesselnde Gameplay-Erlebnisse plattformübergreifend zu entwickeln.",
+        "hero.title": "Game, Graphics & Simulation Engineer",
+        "hero.availability": "Werkstudentenstelle in Game, Graphics & Simulation gesucht | Arbeitserlaubnis: 20 Std./Woche",
+        "hero.summary": "Engineer mit 2+ Jahren Berufserfahrung, spezialisiert auf Gameplay-Systeme, Grafikprogrammierung, Physik- & Echtzeitsimulationen, Multiplayer-Features, Playable Ads, WebGL- und Mobile-Game-Entwicklung. Mitwirkung an Live-Operations von Titeln wie Temple Run, Entwicklung von über 20 optimierten Playable Ads und der Ethernal Engine (einer maßgeschneiderten C++/OpenGL Game-Engine). Derzeit Studium des M.Sc. in Game Technologies an der Hochschule Bonn-Rhein-Sieg in Bonn, Deutschland. Aktuell auf der Suche nach einer Werkstudentenstelle im Bereich Game, Graphics & Simulation mit Arbeitserlaubnis für 20 Std./Woche.",
         "hero.viewWork": "Meine Arbeit ansehen",
         "hero.contactMe": "Kontaktiere mich",
         "hero.cv": "Lebenslauf",
@@ -282,7 +284,7 @@ const translations = {
         "education.deg2.title": "Master of Science in Game Technologies",
         "education.deg2.school": "Hochschule Bonn-Rhein-Sieg, Deutschland",
         "education.deg2.date": "Sep 2026 - Aug 2028",
-        "education.deg2.germanGrade": "Wird Bald Beginnen",
+        "education.deg2.germanGrade": "",
 
         "languages.title": "Sprachen",
         "languages.english": "Englisch (B2)",
@@ -292,12 +294,12 @@ const translations = {
 
         "skills.title": "Technische Fähigkeiten",
         "skills.programming": "Programmiersprachen",
-        "skills.engines": "Game Engines & Grafik",
+        "skills.engines": "Game Engines, Grafik & Simulation",
         "skills.libraries": "Bibliotheken & Tools",
 
         "contact.title": "Kontakt Aufnehmen",
-        "contact.desc": "Ich bin derzeit auf der Suche nach neuen Möglichkeiten und Kooperationen. Ob Sie eine Frage haben oder einfach nur Hallo sagen möchten, ich werde mein Bestes tun, um mich bei Ihnen zu melden!",
-        "contact.location": "Hyderabad, Indien / Umzug nach Bonn, Deutschland (September 2026)",
+        "contact.desc": "Ich befinde mich derzeit in Bonn, Deutschland, und suche aktiv nach einer Werkstudentenstelle im Bereich Game, Graphics & Simulation Engineering (Arbeitserlaubnis für 20 Std./Woche vorhanden). Wenn Sie eine offene Stelle haben oder sich einfach vernetzen möchten, melden Sie sich gerne!",
+        "contact.location": "Bonn, Deutschland",
         "lor.xansr": "Empfehlungsschreiben – Xansr Technologies",
         "lor.funcell": "Empfehlungsschreiben – Funcell Games",
         "lor.gtu": "Empfehlungsschreiben – GTU",
