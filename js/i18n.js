@@ -133,9 +133,9 @@ const translations = {
         "education.deg2.germanGrade": "",
 
         "languages.title": "Languages",
-        "languages.english": "English (B2)",
+        "languages.english": "English (C1)",
         "languages.german": "German (A2)",
-        "languages.hindi": "Hindi (C1)",
+        "languages.hindi": "Hindi (C2)",
         "languages.gujarati": "Gujarati (Native)",
 
         "skills.title": "Technical Skills",
@@ -287,9 +287,9 @@ const translations = {
         "education.deg2.germanGrade": "",
 
         "languages.title": "Sprachen",
-        "languages.english": "Englisch (B2)",
+        "languages.english": "Englisch (C1)",
         "languages.german": "Deutsch (A2)",
-        "languages.hindi": "Hindi (C1)",
+        "languages.hindi": "Hindi (C2)",
         "languages.gujarati": "Gujarati (Muttersprache)",
 
         "skills.title": "Technische Fähigkeiten",

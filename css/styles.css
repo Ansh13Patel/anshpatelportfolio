@@ -295,11 +295,17 @@ main {
     margin-bottom: 2rem;
     box-shadow: 0 4px 20px rgba(139, 92, 246, 0.15);
     backdrop-filter: blur(10px);
+    max-width: 100%;
 }
 
 .availability-badge .pulse-dot {
-    width: 8px;
-    height: 8px;
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    min-width: 9px;
+    min-height: 9px;
+    aspect-ratio: 1 / 1;
+    flex-shrink: 0;
     background-color: #10b981;
     border-radius: 50%;
     box-shadow: 0 0 10px #10b981;
@@ -1207,6 +1213,14 @@ footer {
 
     .edu-lor-container {
         justify-content: flex-start;
+    }
+
+    .availability-badge {
+        font-size: 0.85rem;
+        padding: 0.6rem 1rem;
+        border-radius: 20px;
+        text-align: left;
+        line-height: 1.4;
     }
 }
 
