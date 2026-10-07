@@ -125,7 +125,7 @@ const translations = {
         "education.deg1.title": "Bachelor of Engineering in Information Technology",
         "education.deg1.school": "Gujarat Technological University, India",
         "education.deg1.date": "Oct 2020 - June 2024",
-        "education.deg1.germanGrade": "(German: 1.7)",
+        "education.deg1.germanGrade": "(German Grade: 1.7)",
 
         "education.deg2.title": "Master of Science in Game Technologies",
         "education.deg2.school": "Bonn-Rhein-Sieg University of Applied Science, Germany",
