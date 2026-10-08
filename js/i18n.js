@@ -150,6 +150,7 @@ const translations = {
         "lor.xansr": "Letter of Recommendation – Xansr Technologies",
         "lor.funcell": "Letter of Recommendation – Funcell Games",
         "lor.gtu": "Letter of Recommendation – GTU",
+        "footer.text": "© 2026 Ansh Patel. Developed with passion."
     },
     de: {
         "nav.about": "Über mich",
